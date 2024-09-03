@@ -1,20 +1,57 @@
+"use client"
+import Loader from '@/components/Loader/Loader';
+import { useEffect, useState } from 'react';
+import { fetchPosts } from '../../api/fetchBlogPost';
 import Blogpostcard from '@/components/Blogpostcard/Blogpostcard';
 
-async function getData() {
-  const res = await fetch('https://newsapi.org/v2/everything?q=bitcoin&apiKey=63c4e5eca2554ed2a410f45266d556cc');
-  const data = await res.json();
-  return data.articles; // Return only the articles
-}
 
-async function Page() {
-  const articles = await getData();
+
+const BlogPage = () => {
+  const [posts, setPosts] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const getPosts = async () => {
+      try {
+        const data = await fetchPosts();
+        if (data && Array.isArray(data.data)) {
+          setPosts(data.data);
+        } else {
+          setPosts([]);
+        }
+      } catch (error) {
+        setPosts([]);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    getPosts();
+  }, []);
+
+  if (loading) {
+    return <Loader />;
+  }
+
   return (
     <div className='home-latest-post'>
-      {articles.map((article) => (
-        <Blogpostcard key={article.url} article={article} />
-      ))}
+      {posts.length > 0 ? (
+        posts.map((post) => (
+          <Blogpostcard key={post.id} 
+          article = {
+            {
+              title: post.attributes.title,
+              publishedAt: post.attributes.publishedAt,
+              slug: post.attributes.slug
+            }
+          }/>
+        ))
+      ) : (
+        <p>No posts available.</p>
+      )}
     </div>
   );
-}
+};
 
-export default Page;
+export default BlogPage;
+

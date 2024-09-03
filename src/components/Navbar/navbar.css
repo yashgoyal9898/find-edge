@@ -3,16 +3,9 @@ nav {
   justify-content: space-between;
   align-items: center;
   background: #fff;
-  padding: 1.5rem 0;
+  padding: 0.5rem 0;
   color: #000;
   font-weight: 500;
-}
-
-@media (max-width: 768px) {
-  nav {
-    padding: 1rem;
-    flex-direction: row-reverse;
-  }
 }
 
 .logo {
@@ -27,7 +20,34 @@ nav {
   transition: transform 0.3s ease-in-out;
 }
 
+.menu-item {
+  margin: 0 1rem;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.close-menu {
+  display: none;
+  cursor: pointer;
+  font-size: 2rem;
+  text-align: right;
+  padding: 0 1rem;
+}
+
+
+
 @media (max-width: 768px) {
+  nav {
+    padding: 1rem;
+    flex-direction: row-reverse;
+  }
+
   .menu {
     flex-direction: column;
     width: 100%;
@@ -45,40 +65,17 @@ nav {
   .menu.open {
     transform: translateX(0);
   }
-}
 
-.menu-item {
-  margin: 0 1rem;
-}
-
-@media (max-width: 768px) {
   .menu-item {
     width: 100%;
     text-align: left;
     margin: 1.5rem 0;
   }
-}
 
-.hamburger {
-  display: none;
-  cursor: pointer;
-}
-
-@media (max-width: 768px) {
   .hamburger {
     display: block;
   }
-}
 
-.close-menu {
-  display: none;
-  cursor: pointer;
-  font-size: 2rem;
-  text-align: right;
-  padding: 0 1rem;
-}
-
-@media (max-width: 768px) {
   .close-menu {
     display: block;
   }

@@ -1,9 +1,9 @@
 import React from 'react'
 
-function AboutPage() {
+let aboutPage = () => {
   return (
     <div>AboutPage</div>
   )
 }
 
-export default AboutPage
+export default aboutPage

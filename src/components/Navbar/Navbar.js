@@ -21,7 +21,7 @@ const Navbar = () => {
       <div className={`menu-overlay ${isOpen ? 'open' : ''}`} onClick={closeMenu}></div>
       <nav>
         <div className="logo">
-          <Image src="/image/main-logo.png" alt="My Logo" width={120} height={27} />
+          <Image src="/image/navbar-logo.png" alt="My Logo" width={150} height={24} />
         </div>
         <div className="hamburger" onClick={toggleMenu}>
           &#9776;
@@ -37,7 +37,7 @@ const Navbar = () => {
             <Link href="/blog">Blog</Link>
           </li>
           <li className="menu-item" onClick={closeMenu}>
-            <Link href="/services">About</Link>
+            <Link href="/about">About</Link>
           </li>
           <li className="menu-item" onClick={closeMenu}>
             <Link href="/contact">Contact</Link>
