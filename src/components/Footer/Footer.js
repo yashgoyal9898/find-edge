@@ -13,7 +13,7 @@ function Footer() {
                     </div>
                 </div>
                 <div className="footerright">
-                    <Link href="/disclamier"> Disclamier </Link>
+                    <Link href="/disclaimer"> Disclamier </Link>
                     <Link href="/privacy-policy"> Privacy Policy </Link>
                     <Link href="/sitemap"> Sitemap </Link>
                 </div>

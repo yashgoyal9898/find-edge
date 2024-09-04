@@ -1,5 +1,5 @@
 .home-latest-post {
-    padding: 1.5rem 0;
+    padding: 2rem 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -9,18 +9,13 @@
 /* Blog Post  card*/
 .bpc-par-wrapper {
     max-width: 400px;
-    padding: 16px;
     border-radius: 12px;
     border: solid 1px #e8e8ea;
     background-color: #fff;
 }
 
-.bpc-par-wrapper>img {
-    padding-bottom: 1rem;
-}
-
 .bpc-contnt {
-    padding: 0 1rem;
+    padding: 1rem;
 }
 
 .bpc-contnt>span {
@@ -30,8 +25,9 @@
 
 .bpc-contnt>h4 {
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 200;
     padding: 1rem 0;
+    font-family: 'abel';
 }
 
 .post-author-details,

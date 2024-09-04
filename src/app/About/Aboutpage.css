@@ -1,0 +1,16 @@
+.tm-pg {
+    max-width: 1140px;
+    margin: auto;
+    padding: 2em 0;
+}
+
+.tm-pg h1 {
+    font-size: 36px;
+    text-align: center;
+    padding: 1em 0;
+}
+
+p {
+    line-height: 1.7;
+    padding: 1em 0;
+}

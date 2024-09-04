@@ -1,5 +1,10 @@
 .main-footer {
-    padding: 1.5rem 0;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1140px;
+    margin: auto;
+    border-top: 0.1px solid green;
+    padding: 2em 0;
 }
 
 .main-footer,
