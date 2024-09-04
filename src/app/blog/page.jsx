@@ -1,8 +1,9 @@
+// pages/BlogPage.js
 "use client"
-import "./Blogpage.css"
+import "./Blogpage.css";
 import Loader from '@/components/Loader/Loader';
 import { useEffect, useState } from 'react';
-import { fetchPosts } from '../../api/fetchBlogPost';
+import { fetchPosts } from '../../api/fetchBlogPost'; // Adjust path as needed
 import Blogpostcard from '@/components/Blogpostcard/Blogpostcard';
 
 const BlogPage = () => {
@@ -13,11 +14,8 @@ const BlogPage = () => {
     const getPosts = async () => {
       try {
         const data = await fetchPosts();
-        if (data && Array.isArray(data.data)) {
-          setPosts(data.data);
-        } else {
-          setPosts([]);
-        }
+        console.log(data);
+        setPosts(data || []);
       } catch (error) {
         setPosts([]);
       } finally {
@@ -38,23 +36,24 @@ const BlogPage = () => {
       <div className='home-latest-post'>
         {posts.length > 0 ? (
           posts.map((post) => (
-            <Blogpostcard key={post.id} 
-            article = {
-              {
+            <Blogpostcard
+              key={post.id}
+              article={{
                 title: post.attributes.title,
                 publishedAt: post.attributes.publishedAt,
-                slug: post.attributes.slug
-              }
-            }/>
+                slug: post.attributes.slug,
+                author: post.attributes.author.data.attributes.author_name,
+                categories: post.attributes.category.data.attributes.title,
+                ArticleShortDescription: post.attributes.ArticleShortDescription,
+              }}
+            />
           ))
         ) : (
           <p>No posts available.</p>
         )}
       </div>
     </section>
-    
   );
 };
 
 export default BlogPage;
-

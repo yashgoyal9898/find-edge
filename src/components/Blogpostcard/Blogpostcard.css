@@ -2,7 +2,7 @@
     padding: 2rem 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 48px;
     row-gap: 32px;
 }
 
@@ -20,26 +20,44 @@
 
 .bpc-contnt>span {
     font-family: WorkSans;
-    font-size: 16px;
+}
+
+.bpc-contnt span {
+    border: 0.1px solid green;
+    border-radius: 16px;
+    padding: 0.3rem;
+    font-size: 12px;
+    background: #2c952c;
+    color: white;
+    letter-spacing: 1.5px;
 }
 
 .bpc-contnt>h4 {
     font-size: 24px;
     font-weight: 200;
-    padding: 1rem 0;
+    padding: 0.7rem 0 0.4rem 0;
     font-family: 'abel';
-}
-
-.post-author-details,
-.post-author-details>div {
-    display: flex;
-    align-items: center;
 }
 
 .post-author-details {
     justify-content: space-between;
+    font-size: 12px;
 }
 
-.post-author-details>div {
-    gap: 16px;
+.post-contnt {
+    padding-top: 0.6rem;
+}
+
+.readmore-btn {
+    font-size: 16px;
+    border: 1px solid;
+    border-radius: 24px;
+    padding: 0.25rem;
+    text-align: center;
+    max-width: 100px;
+    margin: 0 0 1rem 1rem;
+}
+
+.post-body-section {
+    font-size: 13px;
 }

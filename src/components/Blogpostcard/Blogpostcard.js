@@ -2,32 +2,59 @@ import Image from "next/image";
 import "./Blogpostcard.css";
 import Link from "next/link";
 
+//function to format the date 
+function formatApiDate(publishedAt) {
+  const date = new Date(publishedAt);
+  const publishDate = date.toLocaleString('en-US', {
+    month: 'short',    // "Sep"
+    day: 'numeric',    // "3"
+    year: 'numeric',   // "2024"
+    hour: 'numeric',   // "4"
+    minute: 'numeric', // "45"
+    second: 'numeric', // "00"
+    hour12: true       // "AM/PM"
+  });
+  return publishDate;
+}
+
+function renderArticleShortDescriptionContent(ArticleShortDescription) {
+  if (!ArticleShortDescription) return null;
+
+  return ArticleShortDescription.map((section, index) => (
+    <div key={index} className="post-body-section">
+      {section.children.map((child, childIndex) => (
+        <p key={childIndex}>{child.text}</p>
+      ))}
+    </div>
+  ));
+}
 
 function Blogpostcard({ article }) {
   
   const {
-    title = "Default Title",
-    publishedAt = "f",
-    slug 
+    title,
+    publishedAt,
+    slug,
+    author,
+    categories,
+    ArticleShortDescription
   } = article || {};
 
   return (
-    <Link href={`/blog/${slug}`}>
-      <div className="bpc-par-wrapper">
-        <Image alt={title} src="/image/blog-post-card.png" width={500} height={500} />
-        <div className="bpc-contnt">
-          <span>Hello</span>
-          <h4 className="post-title">{title}</h4>
-          <div className="post-author-details">
-            <div>
-              <Image alt="Default Author" src="/image/bpc-author.png" width={36} height={36} />
-              <span>Default Author</span>
-            </div>
-            <span>{publishedAt.slice(0, 10)}</span>
-          </div>
+    <div className="bpc-par-wrapper">
+      <Image alt={title} src="/image/blog-post-card.png" width={500} height={500} />
+      <div className="bpc-contnt">
+        <span>{categories}</span>
+        <h4 className="post-title">{title}</h4>
+        <div className="post-author-details">
+          {formatApiDate(publishedAt) + ` by ${author}`}
+        </div>
+        <div className="post-contnt">
+          {renderArticleShortDescriptionContent(ArticleShortDescription)}
         </div>
       </div>
-    </Link>
+      <div className="readmore-btn"><Link href={`/blog/${slug}`} >Read More</Link></div>
+    </div>
   );
 }
 
