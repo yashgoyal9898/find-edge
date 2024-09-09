@@ -1,13 +1,13 @@
-.tm-pg {
+.tmb-container {
     max-width: 1140px;
     margin: auto;
-    padding: 2em 0;
+    padding-bottom: 1rem;
 }
 
 .tm-pg h1 {
     font-size: 36px;
     text-align: center;
-    padding: 1em 0;
+    padding: 1rem 0 1rem 0;
 }
 
 p {

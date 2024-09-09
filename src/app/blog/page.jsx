@@ -31,15 +31,16 @@ const BlogPage = () => {
   }
 
   return (
-    <section className='tm-blogpage'>
+    <main className='tmb-container'>
       <h1>Latest Articles</h1>
-      <div className='home-latest-post'>
+      <div className='bp-ltstpst'>
         {posts.length > 0 ? (
           posts.map((post) => (
             <Blogpostcard
               key={post.id}
               article={{
                 title: post.attributes.title,
+                thumbnailImage: post.attributes.image.data.attributes.url,
                 publishedAt: post.attributes.publishedAt,
                 slug: post.attributes.slug,
                 author: post.attributes.author.data.attributes.author_name,
@@ -52,7 +53,7 @@ const BlogPage = () => {
           <p>No posts available.</p>
         )}
       </div>
-    </section>
+    </main>
   );
 };
 

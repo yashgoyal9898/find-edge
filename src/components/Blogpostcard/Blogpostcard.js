@@ -17,22 +17,12 @@ function formatApiDate(publishedAt) {
   return publishDate;
 }
 
-function renderArticleShortDescriptionContent(ArticleShortDescription) {
-  if (!ArticleShortDescription) return null;
-
-  return ArticleShortDescription.map((section, index) => (
-    <div key={index} className="post-body-section">
-      {section.children.map((child, childIndex) => (
-        <p key={childIndex}>{child.text}</p>
-      ))}
-    </div>
-  ));
-}
 
 function Blogpostcard({ article }) {
   
   const {
     title,
+    thumbnailImage,
     publishedAt,
     slug,
     author,
@@ -42,18 +32,18 @@ function Blogpostcard({ article }) {
 
   return (
     <div className="bpc-par-wrapper">
-      <Image alt={title} src="/image/blog-post-card.png" width={500} height={500} />
+      <div className="thumbnailimg">
+        <Image alt={title} src={`http://localhost:1337${thumbnailImage}`} width={500} height={500} />
+      </div>
       <div className="bpc-contnt">
         <span>{categories}</span>
         <h4 className="post-title">{title}</h4>
         <div className="post-author-details">
           {formatApiDate(publishedAt) + ` by ${author}`}
         </div>
-        <div className="post-contnt">
-          {renderArticleShortDescriptionContent(ArticleShortDescription)}
-        </div>
+        <p className="post-contnt" dangerouslySetInnerHTML={{ __html: ArticleShortDescription }} />
       </div>
-      <div className="readmore-btn"><Link href={`/blog/${slug}`} >Read More</Link></div>
+      <Link className="readmore-btn" href={`/blog/${slug}`} >Read More</Link>
     </div>
   );
 }

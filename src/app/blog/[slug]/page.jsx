@@ -1,43 +1,50 @@
-"use client"
-import "./blogpostpage.css"
+"use client";
+import "./blogpostpage.css";
 import { useEffect, useState } from 'react';
-import { fetchPosts } from '../../../api/fetchBlogPost';
-function BlogPost({params}) {
-  const [posts, setPosts] = useState([]);
+import { fetchPostBySlug } from '../../../api/getPostDetail'; // Adjust path if necessary
+import Blogdetail from "@/components/Blogdetail/Blogdetail";
+import Loader from "@/components/Loader/Loader";
+
+function BlogPost({ params }) {
+  const [postDetails, setPostDetails] = useState(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const getPosts = async () => {
-      try {
-        const data = await fetchPosts();
-        console.log(data);
-        setPosts(data || []);
-      } catch (error) {
-        setPosts([]);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    getPosts();
-  }, []);
+    if (params?.slug) {
+      setLoading(true);
+      fetchPostBySlug(params.slug)
+        .then((data) => {
+          setPostDetails(data);
+          setLoading(false);
+        })
+        .catch((error) => {
+          console.error('Error fetching post:', error);
+          setLoading(false);
+        });
+    }
+  }, [params.slug]);
 
   if (loading) {
-    return ;
+    return <Loader />
   }
+
+  if (!postDetails) {
+    return <div>No post found</div>;
+  }
+
   return (
-    <section>
-      <div className='tm-bppage'>
-        <div className="bppage-top">
-          <h1>{params.slug}</h1>
-        </div>
-        <div className="bppage-bottom">
-          <div className="bottom-left">complete body</div>
-          <div className="bottom-right"></div>
-        </div>
-      </div>
-    </section>
-  )
+    <Blogdetail 
+      key={postDetails.id}
+      articleDetails={{
+        tableofcontent: postDetails.tableofcontent,
+        title: postDetails.title,
+        articlebody: postDetails.articlebody,
+        publishedAt: postDetails.publishedAt,
+        articledetailbanner: postDetails.articledetailbanner.data.attributes.url,
+        thumbnailImage: postDetails.image.data.attributes.url,
+      }}
+    />
+  );
 }
 
-export default BlogPost
+export default BlogPost;

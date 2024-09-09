@@ -1,6 +1,20 @@
-.tm-blogpage h1 {
+.tmb-container {
+    max-width: 1140px;
+    margin: auto;
+    padding-bottom: 1rem;
+}
+
+.tmb-container h1 {
     font-size: 36px;
     text-align: center;
     text-transform: uppercase;
-    padding: 1em 0;
+    padding: 1rem 0;
+}
+
+.bp-ltstpst {
+    padding: 1rem 0 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 32px;
+    justify-content: space-between;
 }

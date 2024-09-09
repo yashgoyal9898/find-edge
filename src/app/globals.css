@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -30,4 +34,8 @@ a:hover {
 .main-container {
   max-width: 1280px;
   margin: auto;
+}
+
+p {
+  text-align: justify;
 }

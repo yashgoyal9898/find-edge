@@ -17,7 +17,7 @@ const Navbar = () => {
   };
 
   return (
-    <>
+    <header>
       <div className={`menu-overlay ${isOpen ? 'open' : ''}`} onClick={closeMenu}></div>
       <nav>
         <div className="logo">
@@ -44,7 +44,7 @@ const Navbar = () => {
           </li>
         </ul>
       </nav>
-    </>
+    </header>
   );
 };
 

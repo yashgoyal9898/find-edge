@@ -7,10 +7,17 @@ const FETCH_POSTS_QUERY = gql`
     data {
       attributes {
         title
-        body 
         ArticleShortDescription
         publishedAt
         slug
+        image {
+          data {
+            attributes {
+              url
+              alternativeText
+            }
+          }
+        }
         author {
           data 		{
             attributes {
