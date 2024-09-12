@@ -6,7 +6,7 @@ function Footer() {
   return (
     <footer className="main-footer">
                 <div className="footerleft">
-                    <Image alt="" src="/image/favicon_io/favicon-32x32.png" width="48" height="28" />
+                    <Image alt="" src="/image/footer.png" width="48" height="28" />
                     <div>
                         <p>Trademinia</p>
                         <span>© 2024. All Rights Reserved.</span>
