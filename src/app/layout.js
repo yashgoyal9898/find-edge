@@ -11,9 +11,6 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Trademinia",
   description: "Home Page",
-  icons: {
-    icon: "/favicofdn.ico", // or any other path to your icon file
-  },
 };
 
 export default function RootLayout({ children }) {
