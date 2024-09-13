@@ -10,6 +10,8 @@ const GET_BLOG_DETAIL = gql`
           tableofcontent
           title
           articlebody
+          ArticleShortDescription
+          metakeywords
           publishedAt
           author {
             data {
