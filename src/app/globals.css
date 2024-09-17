@@ -12,6 +12,11 @@ body {
   font-family: 'inter';
 }
 
+.main-container {
+  max-width: 1280px;
+  margin: auto;
+}
+
 ul {
   padding: 0;
   margin: 0;
@@ -23,11 +28,6 @@ li {
 
 p {
   text-align: justify;
-}
-
-.main-container {
-  max-width: 1280px;
-  margin: auto;
 }
 
 .tm-pgemaincnt {

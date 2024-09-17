@@ -26,7 +26,6 @@ nav {
   font-size: 16px;
 }
 
-
 .hamburger {
   display: none;
   cursor: pointer;
@@ -39,8 +38,6 @@ nav {
   text-align: right;
   padding: 0 1rem;
 }
-
-
 
 @media (max-width: 768px) {
   nav {
