@@ -6,9 +6,12 @@ import Blogpostcard from '../Blogpostcard/Blogpostcard';
 
 const Homebanner = () => {
   return (
-    <div>
-      <div className='img-wrapper'>
-        <Image src="/image/home-banner.png" alt="Home banner" width={500} height={300} layout="responsive" />
+    <div className='tm-homebnr'>
+      <div className='hmbnr-left'>
+        <h1>Trademinia is an website which can read blog free beginner to advanced</h1>
+      </div>
+      <div className='hmbnr-right'>
+        <Image alt="" src="/image/hmbnr-right.png" width="520" height="400" />
       </div>
     </div>
   );

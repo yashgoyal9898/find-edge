@@ -1,3 +1,14 @@
-.img-wrapper {
-    position: relative;
+.tm-homebnr {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+
+.tm-homebnr>div {
+    flex: 0 0 50%;
+}
+
+.hmbnr-left h1 {
+    font-size: 48px;
+    line-height: 1.25;
 }

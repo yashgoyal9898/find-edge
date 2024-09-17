@@ -6,17 +6,12 @@ import Link from "next/link";
 function formatApiDate(publishedAt) {
   const date = new Date(publishedAt);
   const publishDate = date.toLocaleString('en-US', {
-    month: 'short',    // "Sep"
-    day: 'numeric',    // "3"
-    year: 'numeric',   // "2024"
-    hour: 'numeric',   // "4"
-    minute: 'numeric', // "45"
-    second: 'numeric', // "00"
-    hour12: true       // "AM/PM"
+    month: 'short',    // "Dec"
+    day: 'numeric',    // "12"
+    year: 'numeric'    // "2024"
   });
   return publishDate;
 }
-
 
 function Blogpostcard({ article }) {
   

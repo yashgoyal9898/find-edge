@@ -1,0 +1,31 @@
+.tm-rcntpost {
+    padding: 1rem 0 0rem 0;
+}
+
+.rcntpost {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.rcntpostimg {
+    flex: 0 0 20%;
+}
+
+.rcntpostcnt h3 {
+    font-size: 24px;
+    padding: 0;
+    font-weight: 600;
+}
+
+.rcntpostcnt p {
+    padding: 0.5rem 0;
+}
+
+.rcntpostcnt span {
+    font-size: 14px;
+}
+
+.rcntpostcnt>div {
+    font-size: 14px;
+}

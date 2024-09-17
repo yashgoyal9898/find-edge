@@ -35,7 +35,8 @@ ul li {
 .blogdetail-header h1 {
     font-size: 36px;
     padding: 1rem 0 0rem 0;
-    text-align: start;
+    text-align: start !important;
+    font-weight: 500;
 }
 
 .blog-detail {

@@ -1,0 +1,11 @@
+.recntblogposr-sec {
+    padding: 2rem 0 1rem 0;
+}
+
+.recntblogposr-sec h2 {
+    padding: 1rem 0;
+    font-size: 21px;
+    font-weight: 700;
+    border-bottom: 2px solid green;
+    display: inline-block;
+}

@@ -29,6 +29,11 @@ a {
 
 a:hover {
   color: #11bc11;
+  text-decoration: underline;
+}
+
+p {
+  text-align: justify;
 }
 
 .main-container {
@@ -36,6 +41,8 @@ a:hover {
   margin: auto;
 }
 
-p {
-  text-align: justify;
+.tm-pgemaincnt {
+  max-width: 1140px;
+  margin: auto;
+  padding: 0.5rem 0 0.5rem 0;
 }
