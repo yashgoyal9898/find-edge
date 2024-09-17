@@ -30,7 +30,7 @@ const Recentblogpost = ({ article }) => {
     <div className='tm-rcntpost'>
         <div className='rcntpost'>
             <div className='rcntpostcnt'>
-                <Link href={`/blog/${slug}`}> <h3>{title}</h3> </Link>
+                <Link className="tm-text-hover" href={`/blog/${slug}`}> <h3>{title}</h3> </Link>
                 <p>{ArticleShortDescription}</p>
                 <div>{formatApiDate(publishedAt) + ` by ${author}`}</div>
             </div>

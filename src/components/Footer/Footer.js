@@ -13,9 +13,9 @@ function Footer() {
             </div>
         </div>
         <div className="footerright">
-            <Link href="/disclaimer"> Disclamier </Link>
-            <Link href="/privacy-policy"> Privacy Policy </Link>
-            <Link href="/sitemap"> Sitemap </Link>
+            <Link className="tm-text-hover" href="/disclaimer"> Disclamier </Link>
+            <Link className="tm-text-hover" href="/privacy-policy"> Privacy Policy </Link>
+            <Link className="tm-text-hover" href="/sitemap"> Sitemap </Link>
         </div>
     </footer>
   )

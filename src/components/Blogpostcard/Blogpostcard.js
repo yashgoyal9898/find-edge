@@ -38,7 +38,7 @@ function Blogpostcard({ article }) {
         </div>
         <p className="post-contnt" dangerouslySetInnerHTML={{ __html: ArticleShortDescription }} />
       </div>
-      <Link className="readmore-btn" href={`/blog/${slug}`} >Read More</Link>
+      <Link className="readmore-btn tm-text-hover" href={`/blog/${slug}`} >Read More</Link>
     </div>
   );
 }

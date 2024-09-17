@@ -31,16 +31,16 @@ const Navbar = () => {
             &times;
           </li>
           <li className="menu-item" onClick={closeMenu}>
-            <Link href="/">Home</Link>
+            <Link className="tm-text-hover" href="/">Home</Link>
           </li>
           <li className="menu-item" onClick={closeMenu}>
-            <Link href="/blog">Blog</Link>
+            <Link className="tm-text-hover" href="/blog">Blogs</Link>
           </li>
           <li className="menu-item" onClick={closeMenu}>
-            <Link href="/about">About</Link>
+            <Link className="tm-text-hover" href="/about">About us</Link>
           </li>
           <li className="menu-item" onClick={closeMenu}>
-            <Link href="/contact">Contact</Link>
+            <Link className="tm-text-hover" href="/contact">Contact us</Link>
           </li>
         </ul>
       </nav>

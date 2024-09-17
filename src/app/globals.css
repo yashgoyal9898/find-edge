@@ -21,17 +21,6 @@ li {
   list-style: none;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-  transition: all 0.3s;
-}
-
-a:hover {
-  color: #11bc11;
-  text-decoration: underline;
-}
-
 p {
   text-align: justify;
 }
@@ -46,3 +35,26 @@ p {
   margin: auto;
   padding: 0.5rem 0 0.5rem 0;
 }
+
+/* Hover link css */
+a {
+  text-decoration: none;
+  color: inherit;
+
+}
+
+.tm-text-hover,
+.tm-primary-btn {
+  transition: all 0.3s;
+}
+
+.tm-text-hover:hover {
+  color: #11bc11;
+  text-decoration: underline;
+}
+
+.tm-primary-btn:hover {
+  color: #11bc11;
+}
+
+/* end Hover link css */
