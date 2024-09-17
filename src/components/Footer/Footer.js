@@ -15,7 +15,7 @@ function Footer() {
         <div className="footerright">
             <Link className="tm-text-hover" href="/disclaimer"> Disclamier </Link>
             <Link className="tm-text-hover" href="/privacy-policy"> Privacy Policy </Link>
-            <Link className="tm-text-hover" href="/sitemap"> Sitemap </Link>
+            <Link className="tm-text-hover" href="/terms-and-condition"> Terms and Conditions </Link>
         </div>
     </footer>
   )
