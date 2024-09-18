@@ -44,7 +44,7 @@ const page = () => {
 
         <div>
             <h2>Google DoubleClick DART Cookie</h2>
-            <p>Google is one of a third-party vendor on our site. It also uses cookies, known as DART cookies, to serve ads to our site visitors based upon their visit to www.website.com and other sites on the internet. However, visitors may choose to decline the use of DART cookies by visiting the Google ad and content network Privacy Policy at the following URL – <a href="https://policies.google.com/technologies/ads">https://policies.google.com/technologies/ads</a></p>
+            <p>Google is one of a third-party vendor on our site. It also uses cookies, known as DART cookies, to serve ads to our site visitors based upon their visit to www.website.com and other sites on the internet. However, visitors may choose to decline the use of DART cookies by visiting the Google ad and content network Privacy Policy at the following URL - <a href="https://policies.google.com/technologies/ads">https://policies.google.com/technologies/ads</a></p>
         </div>
 
         <div>
@@ -80,12 +80,12 @@ const page = () => {
             <h2>GDPR Data Protection Rights</h2>
 
             <p>We would like to make sure you are fully aware of all of your data protection rights. Every user is entitled to the following:</p>
-            <p>The right to access – You have the right to request copies of your personal data. We may charge you a small fee for this service.</p>
-            <p>The right to rectification – You have the right to request that we correct any information you believe is inaccurate. You also have the right to request that we complete the information you believe is incomplete.</p>
-            <p>The right to erasure – You have the right to request that we erase your personal data, under certain conditions.</p>
-            <p>The right to restrict processing – You have the right to request that we restrict the processing of your personal data, under certain conditions.</p>
-            <p>The right to object to processing – You have the right to object to our processing of your personal data, under certain conditions.</p>
-            <p>The right to data portability – You have the right to request that we transfer the data that we have collected to another organization, or directly to you, under certain conditions.</p>
+            <p>The right to access - You have the right to request copies of your personal data. We may charge you a small fee for this service.</p>
+            <p>The right to rectification - You have the right to request that we correct any information you believe is inaccurate. You also have the right to request that we complete the information you believe is incomplete.</p>
+            <p>The right to erasure - You have the right to request that we erase your personal data, under certain conditions.</p>
+            <p>The right to restrict processing - You have the right to request that we restrict the processing of your personal data, under certain conditions.</p>
+            <p>The right to object to processing - You have the right to object to our processing of your personal data, under certain conditions.</p>
+            <p>The right to data portability - You have the right to request that we transfer the data that we have collected to another organization, or directly to you, under certain conditions.</p>
             <p>If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us.</p>
         </div>
 
