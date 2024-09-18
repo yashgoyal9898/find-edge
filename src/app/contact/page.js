@@ -1,9 +1,9 @@
 import React from 'react'
-import "../about/Aboutpage.css"
+import "../pages.css"
 
 let contactpage = () => {
   return (
-    <main className='tmb-container'>
+    <main className='tm-pgemaincnt'>
       <section className='tm-pg'>
         <h1>Contact us</h1>
         <p>

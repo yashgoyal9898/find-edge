@@ -31,7 +31,11 @@ function Blogpostcard({ article }) {
         <Image alt={title} src={`http://localhost:1337${thumbnailImage}`} width={500} height={500} />
       </div>
       <div className="bpc-contnt">
-        <span>{categories}</span>
+        <div className="bp-catg">
+          {categories && categories.map((category, index) => (
+            <span key={index}>{category.attributes.title}</span>
+          ))}
+        </div>
         <h4 className="post-title">{title}</h4>
         <div className="post-author-details">
           {formatApiDate(publishedAt) + ` by ${author}`}

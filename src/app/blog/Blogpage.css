@@ -1,14 +1,9 @@
-.tmb-container {
-    max-width: 1140px;
-    margin: auto;
-    padding-bottom: 1rem;
-}
-
-.tmb-container h1 {
+.tm-blogpge h1 {
     font-size: 36px;
     text-align: center;
     text-transform: uppercase;
     padding: 1rem 0;
+    font-weight: 600;
 }
 
 .bp-ltstpst {

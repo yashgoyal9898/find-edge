@@ -1,0 +1,44 @@
+/* Home Page css */
+.recntblogposr-sec {
+    padding: 2rem 0 1rem 0;
+}
+
+.recntblogposr-sec h2 {
+    padding: 1rem 0;
+    font-size: 21px;
+    font-weight: 700;
+    border-bottom: 2px solid green;
+    display: inline-block;
+}
+
+/* end home page css */
+
+.tm-pg h1 {
+    font-size: 36px;
+    text-align: center;
+    padding: 1rem 0 1rem 0;
+    font-weight: 600;
+}
+
+.tm-pg h2 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.tm-pg h3 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+p {
+    line-height: 1.7;
+    padding: 1em 0;
+}
+
+.tm-pg ul {
+    padding-bottom: 1rem;
+}
+
+.tm-pg ul li {
+    padding: 0.5rem 0;
+}

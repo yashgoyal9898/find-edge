@@ -31,7 +31,7 @@ const BlogPage = () => {
   }
 
   return (
-    <main className='tmb-container'>
+    <main className='tm-pgemaincnt tm-blogpge'>
       <h1>Latest Articles</h1>
       <div className='bp-ltstpst'>
         {posts.length > 0 ? (
@@ -44,7 +44,7 @@ const BlogPage = () => {
                 publishedAt: post.attributes.publishedAt,
                 slug: post.attributes.slug,
                 author: post.attributes.author.data.attributes.author_name,
-                categories: post.attributes.category.data.attributes.title,
+                categories: post.attributes.categories.data,
                 ArticleShortDescription: post.attributes.ArticleShortDescription,
               }}
             />

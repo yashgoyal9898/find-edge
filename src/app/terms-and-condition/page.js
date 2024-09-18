@@ -1,10 +1,9 @@
 import React from 'react'
-import "../about/Aboutpage.css"
-import Link from "next/link";
+import "../pages.css"
 
 const page = () => {
   return (
-    <main className='tmb-container'>
+    <main className='tm-pgemaincnt'>
       <section className='tm-pg'>
         <h1>Terms and Conditions</h1>
         

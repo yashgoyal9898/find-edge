@@ -12,11 +12,6 @@ body {
   font-family: 'inter';
 }
 
-.main-container {
-  max-width: 1280px;
-  margin: auto;
-}
-
 ul {
   padding: 0;
   margin: 0;
@@ -30,6 +25,13 @@ p {
   text-align: justify;
 }
 
+/* this is container for nav bar */
+.main-container {
+  max-width: 1280px;
+  margin: auto;
+}
+
+/* main content container--- body */
 .tm-pgemaincnt {
   max-width: 1140px;
   margin: auto;

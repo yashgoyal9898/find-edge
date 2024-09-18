@@ -1,9 +1,9 @@
 import React from 'react'
-import "../about/Aboutpage.css"
+import "../pages.css"
 
 const page = () => {
   return (
-    <main className='tmb-container'>
+    <main className='tm-pgemaincnt'>
       <section className='tm-pg'>
         <h1>Disclaimer</h1>
         <p>

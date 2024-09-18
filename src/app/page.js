@@ -1,11 +1,11 @@
 "use client"
-import "./homepage.css"
 import Homebanner from "@/components/Homebanner/Homebanner";
 import Recentblogpost from "@/components/Recentblogpost/Recentblogpost";
 
 import Loader from '@/components/Loader/Loader';
 import { useEffect, useState } from 'react';
-import { fetchPosts } from '../api/fetchBlogPost'; // Adjust path as needed
+import { fetchPosts } from '../api/fetchBlogPost';
+import "./pages.css"
 
 export default function Home() {
   const [posts, setPosts] = useState([]);
@@ -46,7 +46,6 @@ export default function Home() {
                   publishedAt: post.attributes.publishedAt,
                   slug: post.attributes.slug,
                   author: post.attributes.author.data.attributes.author_name,
-                  categories: post.attributes.category.data.attributes.title,
                   ArticleShortDescription: post.attributes.ArticleShortDescription,
                 }}
               />
