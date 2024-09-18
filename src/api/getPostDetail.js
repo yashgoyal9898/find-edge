@@ -36,13 +36,6 @@ const GET_BLOG_DETAIL = gql`
                 }
               }
           }
-          category {
-            data {
-              attributes {
-                title
-              }
-            }
-          }
         }
       }
     }
