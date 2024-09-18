@@ -1,6 +1,7 @@
 import React from 'react';
 import "./Blogdetail.css";
 import Image from 'next/image';
+import Socialshare from '../Socialshare/Socialshare';
 
 function renderArticleBody(articlebody) {
   if (!articlebody || !Array.isArray(articlebody)) return null;
@@ -110,12 +111,14 @@ const Blogdetail = ({ articleDetails }) => {
     title,
     articlebody,
     publishedAt,
-    thumbnailImage,
     articledetailbanner
   } = articleDetails || {};
 
+  const websiteUrl="fsda"
+
   return (
     <main className="tmb-container">
+      <Socialshare url={`${websiteUrl + '/blog/how-to-build-stocks-portfolio'}`} />
       <article>
         <section>
           <div className='blogdetail-header'>

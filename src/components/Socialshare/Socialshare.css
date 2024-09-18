@@ -1,0 +1,9 @@
+.tm-social-share {
+    position: fixed;
+    left: 24px;
+    top: 40%;
+}
+
+.tm-social-share img {
+    padding: 0.25rem 0 0.25rem 0;
+}
