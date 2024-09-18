@@ -10,7 +10,7 @@ const page = () => {
         <div>
             <p>Welcome to Trademinia!</p>
 
-            <p>These terms and conditions outline the rules and regulations for the use of Trademinia's Website, located at www.Trademinia.com.</p>
+            <p>These terms and conditions outline the rules and regulations for the use of Trademinias Website, located at www.Trademinia.com.</p>
 
             <p>By accessing this website we assume you accept these terms and conditions. Do not continue to use Trademinia if you do not agree to take all of the terms and conditions stated on this page.</p>
 
@@ -21,7 +21,7 @@ const page = () => {
         <div>
             <h2>Cookies</h2>
 
-            <p>We employ the use of cookies. By accessing Trademinia, you agreed to use cookies in agreement with the Trademinia's Privacy Policy. </p>
+            <p>We employ the use of cookies. By accessing Trademinia, you agreed to use cookies in agreement with the Trademinias Privacy Policy. </p>
 
             <p>Most interactive websites use cookies to let us retrieve the user’s details for each visit. Cookies are used by our website to enable the functionality of certain areas to make it easier for people visiting our website. Some of our affiliate/advertising partners may also use cookies.</p>
         </div>
@@ -94,10 +94,10 @@ const page = () => {
             <ul>
                 <li>By use of our corporate name; or</li>
                 <li>By use of the uniform resource locator being linked to; or</li>
-                <li>By use of any other description of our Website being linked to that makes sense within the context and format of content on the linking party’s site.</li>
+                <li>By use of any other description of our Website being linked to that makes sense within the context and format of content on the linking partys site.</li>
             </ul>
 
-            <p>No use of Trademinia's logo or other artwork will be allowed for linking absent a trademark license agreement.</p>
+            <p>No use of Trademinias logo or other artwork will be allowed for linking absent a trademark license agreement.</p>
         </div>
 
 
